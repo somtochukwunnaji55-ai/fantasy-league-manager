@@ -1,1 +1,78 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+  <title>Fantasy League Manager</title>
+  <link rel="stylesheet"
+href="style.css">
+</head>
+<body>
+    <header>
+      <h1>&#9917;Fantasy League Manager</h1>
+      <p>Build your ultimate squad. Manage your team to victory. Dominate the league!</p>
+    </header>
+    <main>
+       <section class="dashboard">
+          <div class="stat-card">
+            <h3>Budget</h3>
+            <p id="budget">$100.0m</p>
+          </div>
+         <div class="stat-card">
+           <h3>Squad</h3>
+           <p id="squad-count">0 /15</p>
+         </div>
+         <div class="stat-card">
+           <h3>Points</h3>
+           <p id="points">0</p>
+         </div>
+         <div class="stat-card">
+           <h3>League Position</h3>
+           <p id="position">1st</p>
+         </div>
+         </section>
+         <section class="squad-selection">
+           <h2>My Squad</h2>
+           <div class="squad">
+             <div class="position">
+               <h3>Goalkeepers</h3>
+               <div id="goalkeepers"></div>
+             </div>
+           </div>
+           <div class="position">
+            <h3>Defenders</h3> 
+             <div id="defenders"></div>
+           </div>
+            <div class="position">
+            <h3>Midfielders</h3> 
+             <div id="midfielders"></div>
+           </div>
+            <div class="position">
+            <h3>Forwards</h3> 
+             <div id="forwards"></div>
+           </div>
+         </section>
+       <section class="player-section">
+         <h2>Available Players</h2>
+         <div id="player-list"></div>
+       </section>
+      <section class="league-seletion">
+        <h2>League Table</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Pos</th>
+              <th>Manager</th>
+              <th>Points</th>
+            </tr>
+          </thead>
+          <tbody id="league-table">
+          </tbody>
+        </table>
+      </section>
+    </main>
+  <script src="script.js"></script>
+</body>
+</html>
